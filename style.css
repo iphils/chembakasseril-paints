@@ -359,6 +359,42 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
 }
 
+/* WhatsApp */
+.info-list a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); }
+.info-list a:hover { color: var(--pink); }
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  margin-top: 6px;
+  box-shadow: var(--shadow);
+}
+.btn-whatsapp:hover { transform: translateY(-2px); }
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px -6px rgba(37, 211, 102, 0.6);
+  z-index: 60;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 28px -6px rgba(37, 211, 102, 0.7);
+}
+
 /* Footer */
 .site-footer {
   background: var(--ink);

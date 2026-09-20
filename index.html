@@ -49,6 +49,12 @@
     "postalCode": "",
     "addressCountry": "IN"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 10.0942790,
+    "longitude": 76.5567211
+  },
+  "hasMap": "https://www.google.com/maps?q=10.0942790,76.5567211",
   "areaServed": [
     { "@type": "Place", "name": "Odakkali" },
     { "@type": "Place", "name": "Perumbavoor" },
@@ -224,10 +230,17 @@
           Chat on WhatsApp
         </a>
       </div>
-      <div class="contact-map" aria-hidden="true">
-        <div class="map-placeholder">
-          <span>Map of Odakkali</span>
+      <div class="contact-map">
+        <div class="map-embed">
+          <iframe
+            title="Chembakasseril Paints location on Google Maps"
+            src="https://www.google.com/maps?q=10.0942790,76.5567211&hl=en&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
         </div>
+        <a class="btn btn-ghost map-directions" href="https://www.google.com/maps/dir/?api=1&destination=10.0942790,76.5567211" target="_blank" rel="noopener">Get Directions</a>
       </div>
     </div>
   </section>
